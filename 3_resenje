@@ -1,0 +1,55 @@
+--C++
+
+#include <iostream>
+using namespace std;
+
+int main() {    
+    float n1, n2, n3;
+
+    cin >> n1 >> n2 >> n3;
+    
+    #resavamo uz pomoc if naredbe
+    if(n1 >= n2 && n1 >= n3)
+        cout << n1;
+
+    if(n2 >= n1 && n2 >= n3)
+        cout << n2;
+    
+    if(n3 >= n1 && n3 >= n2)
+        cout << n3;
+  
+    return 0;
+}
+
+--python
+
+n1 = float(input("Prvi broj: "))
+n2 = float(input("Drugi broj: "))
+n3 = float(input("Treci broj: "))
+#mozemo koristiti funkciju max 
+print(max(n1,n2,n3))
+
+--C#
+
+static void Main(string[] args)
+        {
+            float n1 = float.Parse(Console.ReadLine());
+            float n2 = float.Parse(Console.ReadLine());
+            float n3 = float.Parse(Console.ReadLine());
+
+            if (n1 > n2)
+            {
+                if (n1 > n3)
+                {
+                    Console.Write(n1);
+                }
+                else
+                {
+                    Console.Write(n3);
+                }
+            }
+            else if (n2 > n3)
+                Console.Write(n2);
+            else
+                Console.Write(n3);
+        }
