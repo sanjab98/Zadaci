@@ -1,0 +1,49 @@
+--python
+
+def faktorijel(x):
+# 1!=1
+    if x == 1:
+        return 1
+    else:
+        # rekurzija
+        return (x * faktorijel(x-1))
+
+n=int(input())
+
+rez=faktorijel(n)
+print(rez)
+
+--C++
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, faktorijel=1;
+	
+	cin >> n;
+	
+	 for(int i = 1; i <= n; ++i) {
+            faktorijel *= i;
+        }
+   
+   cout << faktorijel;
+	
+    return 0;
+}
+
+--C#
+
+ static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            int faktorijel = 1;
+
+            for (int i = 1; i <= n; ++i)
+            {
+                faktorijel *= i;
+            }
+
+            Console.Write(faktorijel);
+        }
