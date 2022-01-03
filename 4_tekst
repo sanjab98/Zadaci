@@ -1,0 +1,19 @@
+Napisati program koji računa sumu prvih n prirodnih brojeva.
+
+ULAZ
+
+Prirodan broj.
+
+IZLAZ
+
+Prirodan broj koji označava sumu prvih n brojeva.
+
+PRIMER
+
+Ulaz
+
+10
+
+Izlaz
+
+55 (zato što je 1+2+3+4+5+6+7+8+9+10=55)
