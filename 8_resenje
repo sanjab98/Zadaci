@@ -1,0 +1,64 @@
+--C++
+
+#include <iostream>
+//potrebna nam je ova biblioteka zbog generisanja random brojeva
+#include <cstdlib>
+using namespace std;
+
+int main() {
+	
+	//generisemo random broj uz pomoc fje rand() pa odredimo ostatak pri deljenju sa 6, to je broj izmedju 0 i 5, i onda kada dodamo 5 dobicemo broj izmedju 5 i 10
+  int o1=rand() %6 + 5;
+	int o2=rand() %6 + 5;
+	int o3=rand() %6 + 5;
+	int n;
+	
+	cin>>n;
+	
+	float prosek= (o1+o2+o3+n)/4.0;
+	
+	cout<<prosek;
+	
+	if (prosek<8.5)
+		cout<<"Aleksandre vrati kredit!";
+
+    return 0;
+}
+
+--python
+
+import random
+
+# randrage(start, kraj, korak) nam daje nasumican broj izmedju broja start i broja kraj, sa korakom korak
+o1=random.randrange(5,10,1)
+o2=random.randrange(5,10,1)
+o3=random.randrange(5,10,1)
+
+n=int(input())
+
+prosek=(o1+o2+o3+n)/4.0
+
+print(prosek)
+
+if prosek<8.5:
+   print("Aleksandre vrati kredit!")
+   
+-- C#
+ static void Main(string[] args)
+        {
+            //prvo ovako definisemo ocene, pa onda na njih primenimo funkciju Next(int,int) koja generise random broj u zadatom intervalu ali oblika [)
+            //zato smo stavili 11 umesto 10
+            Random o1 = new Random();
+            Random o2 = new Random();
+            Random o3 = new Random();
+
+            int n = int.Parse(Console.ReadLine());
+
+            double prosek = (o1.Next(5, 11) + o2.Next(5, 11) + o3.Next(5, 11) + n) / 4.0;
+
+            Console.WriteLine(prosek);
+
+            if (prosek < 8.5)
+                Console.WriteLine("Aleksandre vrati kredit!");
+
+        }
