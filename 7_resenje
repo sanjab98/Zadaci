@@ -1,0 +1,82 @@
+-- C++
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int leva, desna, i;
+    bool prost = true;
+	// leva i desna granica
+    cin >> leva >> desna;
+
+// 0 i 1 nisu prosti brojevi, a za ostale proveravamo kroz for petlju 
+    while (leva < desna) {
+        prost = true;
+        if (leva == 0 || leva == 1) {
+            prost = false;
+        }
+        else {
+            for (i = 2; i <= leva / 2; ++i) {
+                if (leva % i == 0) {
+                    prost = false;
+                    break;
+                }
+            }
+        }
+        
+        if (prost)
+            cout << leva << " ";
+
+        ++leva;
+    }
+
+    return 0;
+}
+
+-- python
+
+l = int(input("Unesite levu granicu: "))  
+d = int(input("Unesite desnu granicu: "))  
+
+#ovakav program ce ispisivati proste brojeve u svakom redu posebno, sto konkretno nije trazeno u ovom zadatku ali smo to uradili da bi se videlo elegantno resenje
+#uz pomoc naredbe break
+#analogno resenju iznad se moze ispisati kod koji ce ispisivati proste brojeve kao sto je trazeno (u jednoj liniji)
+
+for num in range(l,d + 1):  
+   if num > 1:  
+       for i in range(2,num):  
+           if (num % i) == 0:  
+               break  
+       else:  
+           print(num)
+           
+-- C#
+// takodje ispisuje brojeve u svakom redu posebno 
+// ovde koristimo ugnjezdene petlje i vise brojaca
+ static void Main(string[] args)
+        {
+            int l,d, pom = 0;
+            l = int.Parse(Console.ReadLine());
+            d = int.Parse(Console.ReadLine());
+
+            for (int i = l; i < d; i++)
+            {
+                pom = 0;
+                if (i > 1)
+                {
+                    for (int j = 2; j < i; j++)
+                    {
+                        if (i % j == 0)
+                        {
+                            pom = 1;
+                            break;
+                        }
+                    }
+                    if (pom == 0)
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+            }
+        }
+  
