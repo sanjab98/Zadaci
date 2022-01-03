@@ -1,0 +1,29 @@
+Napisati program koji ispisuje sve proste brojeve koji se nalaze u zadatom intervalu.
+
+ULAZ
+
+Unose se dva broja koja predstavljaju granice intervala.
+
+IZLAZ
+
+Ispisuju se prosti brojevi iz zadatog intervala.
+
+PRIMER 1
+
+Ulaz
+
+0 10
+
+Izlaz
+
+2 3 5 7
+
+PRIMER 2
+
+Ulaz
+
+3 23
+
+Izlaz
+
+5 7 11 13 17 19
