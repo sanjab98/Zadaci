@@ -12,7 +12,7 @@ sa komentarima. Dosta zadataka se može rešiti različitim tehinkama, te sam to
 - 7 PROSTI BROJEVI U INTERVALU
 - 8 NASUMIČNI BROJEVI
 - 9 ROK GRUPA
-- 10
+- 10 OTAC I SIN
 - 11
 - 12
 - 13
