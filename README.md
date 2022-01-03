@@ -11,7 +11,7 @@ sa komentarima. Dosta zadataka se može rešiti različitim tehinkama, te sam to
 - 6 ARMSTRONGOV BROJ
 - 7 PROSTI BROJEVI U INTERVALU
 - 8 NASUMIČNI BROJEVI
-- 9
+- 9 ROK GRUPA
 - 10
 - 11
 - 12
