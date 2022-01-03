@@ -1,0 +1,20 @@
+Napisati program koji računa nakon koliko godina će otac biti duplo stariji od sina.
+
+ULAZ
+
+Unose se 2 cela broja.
+
+IZLAZ
+
+Ispisuje se 1 ceo broj.
+
+PRIMER 
+
+Ulaz
+
+9
+35
+
+Izlaz
+
+17 (jer će nakon 17 godina sin imati 26, a otac 52 godine) 
