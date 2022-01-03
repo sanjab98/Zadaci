@@ -1,0 +1,39 @@
+-- C#
+
+ static void Main(string[] args)
+        {
+
+            int s = int.Parse(Console.ReadLine());
+            int o = int.Parse(Console.ReadLine());
+            // o-s je razlika u godinama izmedju oca i sina, toliko godina treba da ima sin da bi bio duplo mladji od oca
+            // zato od te razlike oduzimamo godine sina
+            int trazeno = (o - s) - s;
+
+            Console.Write(trazeno);
+
+        }
+        
+-- python
+
+s=int(input())
+o=int(input())
+
+trazeno=o-s-s
+
+print(trazeno)
+
+-- C++
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int s;
+	cin>>s;
+	int o;
+	cin>>o;
+	
+	int trazeno=o-2*s;
+	cout<<trazeno;
+    return 0;
+}
