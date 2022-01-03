@@ -1,0 +1,40 @@
+--C++
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, suma = 0;
+
+    cin >> n;
+
+    for (int i = 1; i <= n; ++i) {
+        suma += i;
+    }
+
+    cout << suma;
+    return 0;
+}
+
+--python
+
+n = int(input())
+suma = 0
+
+while(n > 0):
+   suma += n
+   n -= 1
+print(suma)
+
+--C#
+
+static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            int suma;
+            //formula za zbir aritmetickog niza kome je prvi clan 1 a poslednji n
+            suma = (1 + n) * n / 2;
+
+            Console.WriteLine(suma);
+        }
