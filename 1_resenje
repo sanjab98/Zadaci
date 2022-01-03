@@ -1,0 +1,73 @@
+-- Python
+
+n = int(input())
+
+#prva dva elementa Fibonacijevog niza su 0 i 1
+n1, n2 = 0, 1
+brojac = 0
+
+#proverimo da li je uneta ispravna vrednost pa stampamo niz
+#clan Fibonacijevog niza je jednak zbiru prethodna dva clana
+if n <= 0:
+   print("Unesite prirodan broj ")
+elif n == 1:
+   print(n1)
+else:
+   while brojac < n:
+       print(n1)
+       n3 = n1 + n2
+       #zamena
+       n1 = n2
+       n2 = n3
+       brojac += 1
+       
+-- C#
+
+ static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            int n1= 0, n2=1;
+            int brojac = 0;
+            int n3 = 0;
+
+            if (n <= 0)
+                Console.WriteLine("Unesite prirodan broj ");
+            else if (n == 1)
+                Console.WriteLine(n1);
+            else
+                while (brojac < n)
+                {
+                    Console.WriteLine(n1);
+                    n3 = n1 + n2;
+                    n1 = n2;
+                    n2 = n3;
+                    brojac += 1;
+                }
+        }
+
+-- C++
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n1 = 0, n2 = 1, n3 = 0, n;
+	int brojac=3;
+
+    cin >> n;
+
+    cout << n1 << ", " << n2 << ", ";
+
+    n3 = n1 + n2;
+
+    while(brojac <= n) {
+		cout << n3 << ", ";
+        n1 = n2;
+        n2 = n3;
+        n3 = n1 + n2;
+		brojac++;
+    }
+	
+    return 0;
+}
