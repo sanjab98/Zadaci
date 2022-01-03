@@ -1,0 +1,44 @@
+-- C#
+
+ static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            if (n < 60000)
+                Console.Write("neuspesan");
+            else if (n < 90000)
+                Console.Write("ocekivano");
+            else
+                Console.Write("uspesan");
+        }
+ 
+ -- C++
+ 
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+  int n;
+	cin>>n;
+	
+	if (n<60000)
+		cout<<"neuspesan";
+	else if (n<90000)
+		cout<<"ocekivano";
+	else
+		cout<<"uspesan";
+
+    return 0;
+}
+
+-- python
+
+n=int(input())
+
+if n<60000:
+   print("neuspesan")
+elif n<90000:
+   print("ocekivano")
+else:
+   print("uspesan")
