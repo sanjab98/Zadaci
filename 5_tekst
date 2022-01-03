@@ -1,0 +1,19 @@
+Napisati program koji računa faktorijel unetog broja.
+
+ULAZ
+
+Unosi se prirodan broj.
+
+Izlaz
+
+Faktorijel unetog prirodnog broja.
+
+PRIMER
+
+Ulaz
+
+6
+
+Izlaz
+
+720 (zato što je 6!=6*5*4*3*2*1=720)
