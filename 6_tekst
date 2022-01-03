@@ -8,7 +8,7 @@ IZLAZ
 
 Broj je Armstrongov - ako jeste, ili Broj nije Armstrongov - inače.
 
-PRIMER
+PRIMER 1
 
 Ulaz
 
@@ -17,3 +17,13 @@ Ulaz
 Izlaz
 
 Broj je Armstrongov. (Zato što je 153 = 1*1*1+5*5*5+3*3*3)
+
+PRIMER 2
+
+Ulaz
+
+1634
+
+Izlaz
+
+Broj je Armstrongov.
