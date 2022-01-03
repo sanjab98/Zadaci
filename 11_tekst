@@ -1,0 +1,32 @@
+Napisati program koji za unete reči ispisuje te reči poređane leksikografski (kao u rečniku).
+
+ULAZ
+
+Unosi se prirodan broj n koji određuje broj reči. Zatim se unose reči.
+
+IZLAZ
+
+Ispisuju se reči poređane leksikografski.
+
+PRIMER 
+
+Ulaz
+
+6
+C++
+Python
+Pera
+Programiranje
+Github
+Asteriks
+
+Izlaz
+
+Asteriks
+C++
+Github
+Pera
+Programiranje
+Python
+
+
