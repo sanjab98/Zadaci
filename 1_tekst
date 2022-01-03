@@ -1,0 +1,26 @@
+Napisati program koji ispisuje prvih n elemenata Fibonačijevog niza.
+
+ULAZ
+
+Unosi se prirodan broj n.
+
+IZLAZ
+
+Prvih n elemenata Fibonačijevog niza.
+
+PRIMER
+
+Ulaz
+
+7
+
+Izlaz
+
+0
+1
+1
+2
+3
+5
+8
+
