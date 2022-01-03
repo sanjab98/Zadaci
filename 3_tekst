@@ -1,0 +1,19 @@
+Napisati program koji za 3 uneta broja ispisuje najveći.
+
+ULAZ
+
+Tri realna broja.
+
+IZLAZ
+
+Najveći od uneta tri broja.
+
+Primer
+
+ULAZ
+
+-57,40,-3.768
+
+IZLAZ
+
+40
