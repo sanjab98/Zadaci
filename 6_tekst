@@ -1,0 +1,19 @@
+Broj sa n cifara je Armstrongov ako je jednak zbiru n-tih stepena svojih cifara. Napisati program koji proverava da li je uneti broj Armstrongov.
+
+ULAZ
+
+Prirodan broj.
+
+IZLAZ
+
+Broj je Armstrongov - ako jeste, ili Broj nije Armstrongov - inače.
+
+PRIMER
+
+Ulaz
+
+153
+
+Izlaz
+
+Broj je Armstrongov. (Zato što je 153 = 1*1*1+5*5*5+3*3*3)
