@@ -1,0 +1,35 @@
+-- C++
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n;
+
+  cin >> n;
+  #koristimo ternarni operator ali moze i na druge nacine
+  (n % 2 == 0) ? cout <<"paran" :  cout <<"neparan";
+    
+  return 0;
+}
+
+-- python
+
+n = int(input())
+
+if (n % 2) == 0:
+   print("paran")
+else:
+   print("neparan")
+   
+-- C#
+
+ static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            if (n % 2 == 0)
+                Console.WriteLine("paran");
+            else
+                Console.WriteLine("neparan");
+        }
