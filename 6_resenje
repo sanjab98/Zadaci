@@ -1,0 +1,73 @@
+-- C++
+
+#include <cmath>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   int n, pom, power, i = 0, rez = 0, ost;
+   cin >> n;
+   //pom je pomocna promenljiva, za racun
+   pom = n;
+   
+   //i je broj cifara 
+   while (pom != 0) {
+      pom /= 10;
+      ++i;
+   }
+   pom = n;
+   // ost je ostatak pri deljenju sa 10 koji predstavlja svaku cifru naseg broja, zatim tu cifru dizemo na i-ti stepen sa funkcijom pow()
+   // posto pow vraca double, da bismo dobili tip int koristimo funkciju round()
+   while (pom != 0) {
+      ost = pom % 10;
+      power = round(pow(ost, i));
+      rez += power;
+      pom /= 10;
+   }
+   // broj n je armstrongov ako je jednak broju rez koji smo dobili prethodnim postupkom
+   if (rez == n)
+      cout << "Broj je Armstrongov.";
+   else
+      cout << "Broj nije Armstrongov.";
+   return 0;
+}
+
+-- python
+
+n = int(input())
+
+# izvrsili smo konverziju tipa u string, pa mozemo uz pomoc fje len da izracunamo ''duzinu'' tj koliko cifara ima broj
+i = len(str(n))
+
+suma = 0
+
+pom = n
+while pom > 0:
+   cifra = pom % 10
+   suma += cifra ** i
+   pom //= 10
+
+if n == suma:
+   print("Broj je Armstrongov")
+else:
+   print("Broj nije Armstrongov")
+   
+ -- C#
+ 
+   static void Main(string[] args)
+        {
+            int n, r, suma = 0, pom;
+            n = int.Parse(Console.ReadLine());
+            pom = n;
+            while (n > 0)
+            {
+                r = n % 10;
+                suma = suma + (r * r * r);
+                n = n / 10;
+            }
+            if (pom == suma)
+                Console.Write("Broj je Armstrongov.");
+            else
+                Console.Write("Broj nije Armstrongov.");
+        }
