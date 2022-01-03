@@ -1,0 +1,19 @@
+Napisati program koji za uneti broj ispisuje da li je on paran ili neparan.
+
+ULAZ
+
+Prirodan broj.
+
+IZLAZ
+
+paran - ako je broj paran, odnosno neparan inače
+
+PRIMER
+
+Ulaz
+
+123456
+
+Izlaz
+
+neparan
