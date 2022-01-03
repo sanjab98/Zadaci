@@ -1,0 +1,23 @@
+Rok grupa organizuje koncert na Ušću. Kapacitet prostora je 100.000 ljudi. Ako dođe
+manje od 60.000 ljudi, koncert je neuspešan, između 60.000 i 90.000 je očekivano, a ako
+dođe više od 90.000, koncert je uspešan. Napisati program koji određuje uspešnost koncerta. 
+
+ULAZ
+
+Unosi se ceo broj koji određuje koliko je ljudi bilo na koncertu.
+
+IZLAZ
+
+neuspešan - za broj manji od 60 000
+očekivano - za broj između 60 000 i 90 000
+uspešan - za broj veći od 90 000
+
+PRIMER
+
+Ulaz 
+
+95 000
+
+Izlaz
+
+uspešan
