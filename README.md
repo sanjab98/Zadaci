@@ -13,7 +13,7 @@ sa komentarima. Dosta zadataka se može rešiti različitim tehinkama, te sam to
 - 8 NASUMIČNI BROJEVI
 - 9 ROK GRUPA
 - 10 OTAC I SIN
-- 11
+- 11 REČNIK
 - 12
 - 13
 - 14
