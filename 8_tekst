@@ -1,0 +1,33 @@
+Aleksandra treba oceniti iz 4 predmeta. Tri profesora de mu dati nasumične (random) ocene (5-10), dok
+četvrtu ocenu dajete vi. Izračunati prosečnu ocenu i ispisati je, a ako je Aleksandrov prosek
+ispod 8,50 tada se ispisuje poruka “Aleksandre vrati kredit!”.
+
+ULAZ
+
+Unosi se jedna ocena tj. jedan ceo broj (5-10).
+
+IZLAZ
+
+Ispisuje se prosek, realan broj, i odgovarajuća poruka.
+
+PRIMER 1
+
+ULAZ
+
+10
+
+IZLAZ
+
+8.5
+(Recimo da su nasumične ocene bile 6, 8, 10)
+
+PRIMER 2
+
+ULAZ
+
+6
+
+IZLAZ
+
+8.00 (ako su nasumične ocene npr. 10,8,8)
+Aleksandre vrati kredit!
