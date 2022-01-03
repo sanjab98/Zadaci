@@ -10,3 +10,4 @@ sa komentarima. Dosta zadataka se može rešiti različitim tehinkama, te sam to
 - 5 FAKTORIJEL
 - 6 ARMSTRONGOV BROJ
 - 7 PROSTI BROJEVI U INTERVALU
+- 8 NASUMICNI BROJEVI
