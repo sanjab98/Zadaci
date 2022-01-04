@@ -1,0 +1,11 @@
+Napisati program koji nalazi mod niza brojeva 4, 1, 1, 7, 2, 2, 1, 5, 3, 6, 3.
+
+ULAZ
+
+Nema ulaza.
+
+IZLAZ
+
+Mod je 1.
+
+Objašnjenje: Mod je onaj element niza koji se najviše pojavljuje u njemu (ovde je to 1, jer se pojavljuje 3 puta, a ostali članovi se pojavljuju jednom ili dva put)
