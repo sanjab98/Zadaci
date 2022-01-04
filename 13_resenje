@@ -1,0 +1,89 @@
+-- C++
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    float a, b, c, x1, x2, D;
+    cout << "Unesite koeficijent a: ";
+    cin >> a ;
+    cout << "\nUnesite koeficijentt b: ";
+    cin >> b ;
+    cout << "\nUnesite koeficijent c: ";
+    cin >> c ;
+	//determinanta jednacine
+    D = b*b - 4*a*c;
+	
+	//ako je D>0 onda imamo dva resenja, a ako je D=0 onda imamo dvostruko resenje
+    if (D > 0){
+        x1 = (-b + sqrt(D)) / (2*a);
+        x2 = (-b - sqrt(D)) / (2*a);
+        cout << "\nx1 = " << x1 << endl;
+        cout << "\nx2 = " << x2 << endl;
+    }
+	if(D == 0){
+        x1 = (-b + sqrt(D)) / (2*a);
+        cout << "\nx1 = x2 = " << x1 << endl;
+    }
+    return 0;
+}
+
+-- python
+
+import math
+
+print("Unesite koeficijent a: ")
+a=int(input())
+
+print("\nUnesite koeficijent b: ")
+b=int(input())
+
+print("\nUnesite koeficijent c: ")
+c=int(input())
+
+D=b*b-4*a*c;
+
+if D>0:
+    x1 = (-b + math.sqrt(D)) / (2*a)
+    x2 = (-b - math.sqrt(D)) / (2*a)
+    print("\nx1= ", x1)
+    print("\nx2= ", x2)
+if D==0:
+   x1=(-b + math.sqrt(D)) / (2*a)
+   print("\nx1=x2=", x1)
+   
+-- C#
+
+static void Main(string[] args)
+        {
+
+            Console.WriteLine("Unesite koeficijent a: ");
+            int a = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Unesite koeficijent b: ");
+            int b = int.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Unesite koeficijent c: ");
+            int c = int.Parse(Console.ReadLine());
+
+            double D = b * b - 4 * a * c;
+            double x1, x2;
+
+            if (D > 0)
+            {
+                x1 = (-b + Math.Sqrt(D)) / (2 * a);
+                x2 = (-b - Math.Sqrt(D)) / (2 * a);
+                Console.WriteLine("x1= " +x1);
+                Console.WriteLine("x2= "+x2);
+            }
+            if (D == 0)
+            {
+                x1 = (-b + Math.Sqrt(D)) / (2 * a);
+                Console.WriteLine("x1=x2="+x1);
+            }
+
+        }
+
