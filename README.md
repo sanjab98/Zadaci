@@ -14,7 +14,7 @@ sa komentarima. Dosta zadataka se može rešiti različitim tehinkama, te sam to
 - 9 ROK GRUPA
 - 10 OTAC I SIN
 - 11 REČNIK
-- 12
+- 12 PASKALOV TROUGAO
 - 13
 - 14
 - 15
