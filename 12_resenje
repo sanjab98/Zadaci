@@ -1,0 +1,91 @@
+-- C++
+
+#include<iostream>
+
+using namespace std;
+
+// funkcija koja racuna faktorijel
+long fakt(int x)
+{
+    int i;
+    long f=1;
+
+    for(i=1;i<=x;++i)
+    {
+        f=f*i;
+    }
+
+    return f;
+}
+
+int main()
+{
+    int i,j,k,n;
+
+    cin>>n;
+
+    for(i=0;i<n;++i)
+    {
+        //petlja koja stampa odgovarajuci broj razmaka u redu
+        for(j=1;j<=(n-i-1);++j)
+        {
+            cout<<" ";
+        }
+
+        //petlja koja stampa odgovarajuce brojeve u redu (Paskalov trougao sadrzi binomne koeficijente)
+        for(k=0;k<=i;++k)
+        {
+             cout<<fakt(i)/(fakt(i-k)*fakt(k))<<" ";
+        }
+
+        cout<<"\n";    //prelazak u novi red 
+    }
+
+    return 0;
+}
+
+
+-- python
+
+#ovde mozemo da koristimo ugradjenu funkciju za faktorijel
+from math import factorial
+
+n = int(input())
+for i in range(n):
+    for j in range(n-i+1):
+ 
+        #stampamo razmake
+        print(end=" ")
+ 
+    for j in range(i+1):
+ 
+        #stampamo odgovarajuce vrednosti
+        print(factorial(i)//(factorial(j)*factorial(i-j)), end=" ")
+ 
+    #novi red
+    print()
+    
+ -- C#
+ 
+  static void Main(string[] args)
+        {
+
+            int n, c = 1, k, i, j;
+
+            n = int.Parse(Console.ReadLine());
+            for (i = 0; i < n; i++)
+            {
+                for (k = 1; k <= n- i; k++)
+                    Console.Write("  ");
+                for (j = 0; j <= i; j++)
+                {
+                    if (j == 0 || i == 0)
+                        c = 1;
+                    else
+                        //drugi nacin je preko poznate formule za binomne koeficijente
+                        c = c * (i - j + 1) / j;
+                    Console.Write("{0}   ", c);
+                }
+                Console.Write("\n");
+            }
+        }
