@@ -1,0 +1,38 @@
+Napisati program koji ispisuje realna rešenja kvadratne jednačine. Pretpostaviti da su koeficijenti različiti od nule.
+
+ULAZ
+
+Unesite koeficijent a:
+Unesite koeficijent b:
+Unesite koeficijent c:
+
+IZLAZ 
+
+x1=
+x2=
+
+PRIMER 1
+
+Ulaz
+
+Unesite koeficijent a: 1
+Unesite koeficijent b: -1
+Unesite koeficijent c: -2
+
+Izlaz
+
+x1 = 2
+
+x2 = -1
+
+PRIMER 2
+
+Ulaz
+
+Unesite koeficijent a: 1
+Unesite koeficijent b: 2
+Unesite koeficijent c: 1
+
+Izlaz 
+
+x1=x2=-1
