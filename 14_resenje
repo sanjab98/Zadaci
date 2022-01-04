@@ -1,0 +1,63 @@
+-- C++
+
+#include <iostream>
+using namespace std;
+
+void obrni(const string& a);
+
+int main()
+{
+    string str;
+
+    getline(cin, str);
+
+    cout<<"";
+    obrni(str);
+
+    return 0;
+}
+
+//ova funkcija ce odmah ispisivati obrnut string, koristimo rekurziju
+void obrni(const string& str)
+{ 
+//br karaktera u stringu
+    size_t n = str.size();
+//ako ima samo 1 karakter, nista se ne menja
+    if(n == 1)
+       cout << str << endl;
+    else
+    {
+       cout << str[n - 1];
+       obrni(str.substr(0, n - 1));
+    }
+}
+
+--python
+
+def obrni(s):
+  str = ""
+  for i in s:
+    str = i + str
+  return str
+   
+s=input()
+
+print(obrni(s))
+
+-- C#
+
+static void Main(string[] args)
+        {
+            string str = "", str1 = "";
+            int Length = 0;
+            str = Console.ReadLine();
+            //duzina niske
+            Length = str.Length - 1;
+            while (Length >= 0)
+            {
+                str1 = str1 + str[Length];
+                Length--;
+            }
+
+            Console.WriteLine(str1);
+        }
