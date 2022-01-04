@@ -1,0 +1,31 @@
+Napisati program koji ispisuje Paskalov trougao.
+
+         1               -- prvi element je 1
+        1 1              -- na krajevima uvek dodajemo jedinice, dok su srednji elementi jednaki zbiru elemenata iznad njih
+       1 2 1
+      1 3 3 1
+     1 4 6 4 1
+    1 5 10 10 5 1
+      ......
+ 
+ ULAZ
+  
+ Unosi se prirodan broj koji određuje broj redova u Paskalovom trouglu.
+  
+ IZLAZ
+ 
+ Paskalov trougao kao na slici iznad.
+ 
+ PRIMER
+ 
+ Ulaz
+ 
+ 4
+ 
+ Izlaz
+
+    1             
+   1 1             
+  1 2 1
+ 1 3 3 1
+  
