@@ -1,11 +1,29 @@
-Napisati program koji nalazi mod niza brojeva 4, 1, 1, 7, 2, 2, 1, 5, 3, 6, 3.
+Napisati program koji za zadatu poziciju na šahovskoj tabli, određuje da li je igrač na crnom ili belom polju.
 
 ULAZ
 
-Nema ulaza.
+Unosi se pozicija oblika slovobroj, gde je slovo od A do H (engleski alfabet) a broj od 1 do 8.
 
 IZLAZ
 
-Mod je 1.
+Crno polje - ako je igrač na crnom bolju, inače Belo polje.
 
-Objašnjenje: Mod je onaj element niza koji se najviše pojavljuje u njemu (ovde je to 1, jer se pojavljuje 3 puta, a ostali članovi se pojavljuju jednom ili dva put)
+PRIMER 1
+
+Ulaz
+
+A1
+
+Izlaz
+
+Crno polje
+
+PRIMER 2
+
+Ulaz
+
+D7
+
+Izlaz
+
+Belo polje
