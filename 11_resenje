@@ -1,0 +1,81 @@
+-- C++
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	
+	cin>>n;
+    string str[n+1], temp;
+    //ucitavamo nisku po nisku 
+    for(int i = 0; i < n+1; ++i)
+    {
+      getline(cin, str[i]);
+    }
+
+    //za sortiranje koristimo bubble sort
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n- i; ++j) {
+            if (str[j] > str[j + 1]) {
+                temp = str[j];
+                str[j] = str[j + 1];
+                str[j + 1] = temp;
+            }
+        }
+    }
+    //ispisujemo sortirane niske 
+    for(int i = 0; i < n+1; ++i)
+    {
+       cout << str[i] << endl;
+    }
+    return 0;
+}
+
+-- python 
+
+n=int(input())
+
+str=[]
+
+#citamo red po red i ubacujemo u nasu listu str
+while n!=0:
+   s=input()
+   if s:
+      str.append(s)
+   else:
+      break
+   n=n-1
+
+#sortiramo uz pomoc ugradjene fje
+str.sort()
+#ispisujemo sortirane niske
+for rec in str:  
+   print(rec)  
+   
+-- C#
+
+using System.Collections.Generic; // jer koristimo liste
+ static void Main(string[] args)
+        {
+
+            int n = int.Parse(Console.ReadLine());
+            var str = new List<string>();
+            
+            while (n!=0)
+            {
+                string x = Console.ReadLine();
+                // ucitavamo string x u svakom redu posebno i ubacujemo ga u listu str
+                str.Add(x);
+                n--;
+            }
+
+            str.Sort();
+            //ispisujemo listu element po element u svakom redu uz pomoc funkcije String.Join()
+            Console.WriteLine(String.Join("\n",str));
+         
+
+
+
+        }
