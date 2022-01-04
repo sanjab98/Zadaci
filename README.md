@@ -17,4 +17,4 @@ sa komentarima. Dosta zadataka se može rešiti različitim tehinkama, te sam to
 - 12 PASKALOV TROUGAO
 - 13 KVADRATNA JEDNAČINA
 - 14 NAOPAKO
-- 15 MOD 
+- 15 ŠAHOVSKA TABLA
