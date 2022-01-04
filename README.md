@@ -15,6 +15,6 @@ sa komentarima. Dosta zadataka se može rešiti različitim tehinkama, te sam to
 - 10 OTAC I SIN
 - 11 REČNIK
 - 12 PASKALOV TROUGAO
-- 13
-- 14
-- 15
+- 13 KVADRATNA JEDNAČINA
+- 14 NAOPAKO
+- 15 MOD 
